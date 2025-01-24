@@ -448,16 +448,4 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
-    <Style TargetType="FlyoutItem" x:Key="HomeFlyout">
-        <Setter Property="Title" Value="Home"/>
-        <Style.Triggers>
-            <Trigger TargetType="FlyoutItem" Property="IsChecked" Value="False">
-                <Setter Property="FlyoutIcon" Value="dotnet_bot.png"/>
-            </Trigger>
-            <Trigger TargetType="FlyoutItem" Property="IsChecked" Value="True">
-                <Setter Property="FlyoutIcon" Value="dotnet_bot.png"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
 </ResourceDictionary>
