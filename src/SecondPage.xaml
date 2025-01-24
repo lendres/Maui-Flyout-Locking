@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnlockingFlyout.SecondPage">
 
-
-	<Shell.BackButtonBehavior>
-		<BackButtonBehavior Command="{Binding BackCommand}"
-                            BindingContext="{Binding Source={x:Reference self}, Path=BindingContext}"
-                            IconOverride="back_arrow_2.png" />
-	</Shell.BackButtonBehavior>
+	<!--<Shell.BackButtonBehavior>
+		<BackButtonBehavior
+            Command="{Binding BackCommand}"
+            BindingContext="{Binding Source={x:Reference self}, Path=BindingContext}"/>
+	</Shell.BackButtonBehavior>-->
 
     <ScrollView>
         <VerticalStackLayout
@@ -24,12 +23,6 @@
                 Text="Second Page"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
                 Text="Go Back" 
