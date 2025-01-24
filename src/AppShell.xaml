@@ -7,7 +7,25 @@
     FlyoutBehavior="Locked"
     Title="UnlockingFlyout">
 
-    <FlyoutItem Title="Home">
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="60,0.8*" RowDefinitions="68">
+                <Image 
+                    Grid.Column="0"
+                    Source="{Binding FlyoutIcon}"
+					VerticalOptions="Center"
+					HorizontalOptions="Center"                               
+					HeightRequest="38"
+					WidthRequest="38"/>
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding Title}"
+                    VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Home" FlyoutIcon="dotnet_bot.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
     </FlyoutItem>
 
